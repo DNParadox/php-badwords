@@ -18,10 +18,10 @@ tutte le occorrenze della parola da censurare. -->
 <?php 
 // Creiamo una stringa con contenuto a nostro piacere
 $testo1 = "Le automazioni in iOS non sono per niente userfriendly.";
-// Creiamo una seconda var dove modificheremo con il comando str_replace la parola "iOS"
-// con un'altra che recupereremo dal comando $_get indicandone la stringa
-// Otteniamo quindi una nuova stringa con il valore get a piacimento del client-side 
-$testo2 = str_replace("iOS", $_GET['name'] , $testo1);
+// Creiamo una seconda var dove modificheremo con il comando str_replace la parola all'interno di "$_GET"
+// diamo come seconda opzione una stringa, una var o un numero a nostro piacimento
+// Stampiamo all'interno della stringa desiderata
+$testo2 = str_replace($_GET["name"] , "***", $testo1);
 // Comando che stampa la lunghezza della stringa
 strlen($string);
 
